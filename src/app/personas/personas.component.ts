@@ -7,21 +7,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PersonasComponent {
 
-  agregarPersona = false;
-  agregarPersonaStatus = "No se ha agregado ninguna persona.";
-  tituloPersona: string;
+  operandoA: number;
+  operandoB: number;
+  resultadoOperandos: number;
 
-  constructor() {
-    setTimeout(() => {
-      this.agregarPersona = true;
-    }, 3000)
+  constructor() { }
+
+  onSumaOperandos() {
+    this.resultadoOperandos = this.operandoA + this.operandoB;
   }
 
-  onCrearPersona() {
-    this.agregarPersonaStatus = "Persona agregada.";
-  }
-
-  onModificarPersona(event: Event) {
-    this.tituloPersona = (<HTMLInputElement>event.target).value;
-  }
 }
