@@ -1,0 +1,25 @@
+<div class="container">
+    <div class="row">
+      <div class="col">
+  
+        <h2>APLICACIÓN DE CALCULADORA CON ANGULAR</h2>
+  
+        <!-- EJERCICIO DE CALCULADORA CON ANGULAR -->
+        <label>Operando A:</label>
+        <input type="number" class="form-control" [(ngModel)]="operandoA" placeholder="Escribe el operando A">
+        {{operandoA}}
+  
+        <p></p>
+        
+        <label>Operando B:</label>
+        <input type="number" class="form-control" [(ngModel)]="operandoB"  placeholder="Escribe el operando B">
+        {{operandoB}}
+  
+        <h3>Resultado:</h3>
+        <!-- PROPERTY BINDING -->
+        <button class="btn btn-primary" (click)="onSumaOperandos()">Sumar</button>
+        <p>{{resultadoOperandos}}</p>
+  
+      </div>
+    </div>
+  </div>

@@ -1,11 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-personas',
-  templateUrl: './personas.component.html',
-  styleUrls: ['./personas.component.css']
+  selector: 'app-calculadora',
+  templateUrl: './calculadora.component.html',
+  styleUrls: ['./calculadora.component.css']
 })
-export class PersonasComponent {
+export class CalculadoraComponent {
 
   operandoA: number;
   operandoB: number;
