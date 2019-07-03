@@ -1,1 +1,20 @@
-<app-calculadora></app-calculadora>
+<div class="container">
+    <div class="row">
+        <div class="col">
+
+            <h2>APLICACIÓN DE CALCULADORA CON ANGULAR</h2>
+
+
+            <!-- EVENT BINDING -->
+            <app-operandos (resultadoSuma)="onResultado($event)">
+            </app-operandos>
+
+            <h3>Resultado:</h3>
+
+            <!-- PROPERTY BINDING -->
+            <app-resultado [resultado]="resultadoPadre">
+            </app-resultado>
+
+        </div>
+    </div>
+</div>

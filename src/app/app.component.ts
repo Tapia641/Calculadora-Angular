@@ -6,8 +6,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 
-export class AppComponent { 
-  // CONCEPTO DE INTERPOLACION
-  titulo  = 'Mi app';
+export class AppComponent {
+
+  resultadoPadre: number;
   
+  onResultado(resultado: number) {
+    this.resultadoPadre = resultado;
+  }
+
 }

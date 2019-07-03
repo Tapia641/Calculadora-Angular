@@ -5,12 +5,14 @@ import { AppComponent } from './app.component';
 
 // FUNCIONA COMO EVENT
 import { FormsModule } from "@angular/forms";
-import { CalculadoraComponent } from './calculadora/calculadora.component';
+import { OperandosComponent } from './operandos/operandos.component';
+import { ResultadoComponent } from './resultado/resultado.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    CalculadoraComponent
+    OperandosComponent,
+    ResultadoComponent
   ],
   imports: [
     BrowserModule,
